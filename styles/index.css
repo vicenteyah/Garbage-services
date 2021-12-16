@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+:root{
+    --colorPrimary: #93CE20;
+    --colorSecondary: #0B4B36;
+    --lightGray: #646C76;
+    --blackText: #000000;
+
+    /** fonts **/
+    --montserrat-regular: 'Montserrat-Regular';
+    --montserrat-light: 'Montserrat-Light';
+    --roboto-regular: 'Roboto-Regular';
+    --roboto-light: 'Roboto-Light';
+    --roboto-medium: 'Roboto-Medium';
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+}

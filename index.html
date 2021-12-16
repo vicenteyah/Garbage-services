@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/mobile/Navbar.mobile.css">
+    <link rel="stylesheet" href="styles/Modal.css">
+    <link rel="stylesheet" href="styles/mobile/Modal.mobile.css">
+    <link rel="stylesheet" href="styles/section.main.css">
+    <link rel="stylesheet" href="styles/mobile/section.main.css">
+    <link rel="stylesheet" href="styles/section.services.css">
+    <link rel="stylesheet" href="styles/mobile/section.services.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+    <title>Garbage Services</title>
+</head>
+<body>
+    <div id="app">
+        <!-- content -->
+        <header class="header-width">
+            <nav class="navbar-container">
+                <div class="logo-header">
+                    <figure>
+                        <img src="images/mt-1733-home-logo.png" alt="">
+                    </figure>
+                    <div class="title">
+                        <h1>Garbage</h1>
+                        <h2>Services</h2>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <a 
+                        id="mobile" 
+                        class="mobile-icon" 
+                        href="javascript:void(0);"
+                        onclick="openDrawer()"
+                    > 
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <!-- mobile content logic -->
+                    <ul id="mobile-ul" class="nav-items">
+                        <li v-for="(element , index) in Navelements">
+                            <a :href="Navelements[index].path">{{ element.title }}</a>
+                        </li>
+                    </ul>
+                    <button class="trigger btn-nav" href="">GET IN TOUCH</button>
+                </div>
+            </nav>
+        </header>
+
+      <div class="section-main">
+        <section class="container">
+            <h3> GIVE US A CALL TO GET A QUOTE TODAY!</h3>
+            <h1>Local Removal</h1>
+            <h1>Service Company</h1>
+            <p>
+                Our reliable services protect the environment while <br>
+                allowing your home or business to run like clockwork.
+            </p>
+        </section>
+      </div>
+
+      <section class="service-container">
+            <div class="title-header">
+              <hr><h1>Full Service</h1><hr>
+            </div>
+            <p>
+              Book junk removal for your home or business, including offices, retail 
+              locations, construction sites and more.
+            </p>
+            <div class="articles-container">
+                <article class="service-article" v-for="(article, index) in services">
+                    <figure>
+                        <img :src="services[index].path" alt="">
+                    </figure>
+                    <h1>{{article.title}}</h1>
+                    <p>
+                        {{article.description}}
+                    </p>
+                </article>
+            </div>
+      </section>
+
+
+        <!-- modal logic -->
+            <div class="modal-container">
+                <div class="modal-content">
+                    <button class="close-button" ><i class="fas fa-times"></i></button>
+                    <h1>Request a Callback</h1>
+                    <p>We can call you in 30 seconds, just enter  your number below</p>
+                    <form class="form-container" action="">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="Phone">
+                        <button>REQUEST</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</body>
+    <script src="javascript/index.js"></script>
+</html>

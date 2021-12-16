@@ -1,0 +1,11 @@
+@media screen and (max-width: 400px) {
+    .modal-content {
+        top: 50%;
+        max-width: 350px;
+        max-height: 500px;
+        padding: 20px 20px;
+    }
+    .form-container input {
+        padding: 0px 10px;
+    }
+}
