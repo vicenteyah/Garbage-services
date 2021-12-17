@@ -115,3 +115,11 @@ $('.accordion_title').click(function() {
   accordion_info.slideToggle();
   icon.toggleClass('fas fa-chevron-right  fas fa-chevron-down');
 })
+
+
+//deploy up
+var pagetop = $('.btn-deploy-up');
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500);
+    return false;
+  });

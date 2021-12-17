@@ -44,3 +44,56 @@ section{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.btn-deploy-up .btn{
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    text-decoration: none;
+    clip-path: polygon(50% 0%, 70% 26%, 98% 35%, 79% 60%, 79% 91%, 49% 79%, 21% 91%, 21% 59%, 2% 35%, 28% 26%);
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--colorPrimary);
+    color: #fff
+}
+
+/** button shine effect **/
+button{ 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after{
+    content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+button:hover:after{
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+
+button:active:after{
+    opacity: 0;
+}
