@@ -76,6 +76,41 @@ const app = new Vue({
             you with this issue.
           `
         }
+      ],
+      tabs: [
+        {
+          id: 1,
+          title: 'Our Services',
+          path:'',
+          description:`
+            They include such bulks as materials and labor. Materials, in turns, include tile, mortar, grout,
+            rough plumbing materials, paint and many other. If you need to  make a calculation of your
+            future renovation project, please give us a call or email us, and our manager will
+            help you with this issue.
+          `
+        },
+        {
+          id: 2,
+          title: 'Our Services',
+          path:'',
+          description:`
+            They include such bulks as materials and labor. Materials, in turns, include tile, mortar, grout,
+            rough plumbing materials, paint and many other. If you need to  make a calculation of your
+            future renovation project, please give us a call or email us, and our manager will
+            help you with this issue.
+          `
+        },
+        {
+          id: 3,
+          title: 'Our Services',
+          path:'',
+          description:`
+            They include such bulks as materials and labor. Materials, in turns, include tile, mortar, grout,
+            rough plumbing materials, paint and many other. If you need to  make a calculation of your
+            future renovation project, please give us a call or email us, and our manager will
+            help you with this issue.
+          `
+        }
       ]
     }
 })

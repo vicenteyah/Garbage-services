@@ -25,6 +25,7 @@
         background: #fff;
         top:30%;
         position: absolute;
+        z-index: 1;
     }
     #mobile-ul{
         display: none;
