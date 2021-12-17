@@ -1,0 +1,51 @@
+.mission-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission-container figure {
+    width: 100%;
+}
+.mission-container figure,img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.description-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.description-mission h1{
+    font-family: var(--roboto-regular);
+    font-size: 80px;
+}
+
+.accordion_title{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.accordion_title i {
+    color:#FFC707;
+}
+.accordion_title h3{
+    font-family: var(--roboto-regular);
+    font-weight: bold;
+    font-size: 20px;
+}
+.accordion_info{
+    display: none;
+}
+.accordion_info p{
+    padding: 20px 30px;
+    font-family: var(--roboto-light);
+    font-size: 15px;
+    text-align: left;
+}

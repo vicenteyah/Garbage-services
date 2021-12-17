@@ -1,0 +1,12 @@
+@media screen and (max-width:400px){
+    .customer-service-wrapper {
+        height: 300px;
+    }
+    
+    .customer-container h1{
+        font-size:30px;
+    }
+    .customer-container p{
+        font-size:13px;
+    }
+}

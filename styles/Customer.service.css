@@ -1,0 +1,48 @@
+.customer-service-wrapper {
+    background-image: url('../images/mt-1733-home-parallax1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.customer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 100px 0px;
+}
+
+.customer-container h1{
+    font-family: var(--roboto-medium);
+    font-weight: lighter;
+    color: #fff;
+    font-size: 80px;
+}
+
+.customer-container p{
+    font-family: var(--roboto-light);
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.customer-container span{
+    color: #FFC707;
+}
+
+.customer-container button{
+    width: 150px;
+    padding: 10px 0px;
+    background: var(--colorPrimary);
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--roboto-medium);
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}

@@ -1,0 +1,24 @@
+@media screen and (max-width:400px){
+    
+    .mission-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .mission-container figure,img {
+        max-width: 300px;
+        max-height: 380px;
+    }
+    iframe {
+        width: 300px;
+        padding: 10px 10px;
+    }
+    .description-mission h1{
+        font-size: 30px;
+    }
+    .accordion_title h3{
+        font-size: 10px;
+    }
+    .description-mission{
+        padding: 0px 30px;
+    }
+}

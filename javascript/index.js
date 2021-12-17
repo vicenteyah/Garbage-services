@@ -54,6 +54,29 @@ const app = new Vue({
           `
         }
       ]
+      ,
+      accordions: [
+        {
+          id: 1,
+          title:'We Adapt to Your Bussiness and Personal Needs',
+          description:`
+            They include such bulks as materials and labor. Materials, in turns, include tile, mortar, grout,
+            rough plumbing materials, paint and many other. If you need to  make a calculation of your 
+            future renovation project, please give us a call or email us, and our manager will 
+            help you with this issue.
+          `
+        },
+        {
+          id: 2,
+          title:'Environmental and Economic Sustainability',
+          description:`
+            They include such bulks as materials and labor. Materials, in turns, include tile, mortar, grout, 
+            rough plumbing materials, paint and many other. If you need to  make a calculation of your 
+            future renovation project, please give us a call or email us, and our manager will help 
+            you with this issue.
+          `
+        }
+      ]
     }
 })
 
@@ -83,3 +106,12 @@ const windowOnClick = (e) => {
 trigger.addEventListener('click', toogleModal)
 closeButton.addEventListener('click', toogleModal)
 window.addEventListener('click', windowOnClick)
+
+//accordion engine
+$('.accordion_title').click(function() {
+  let accordion = $(this);
+  let icon  = accordion.children('#icon');
+  let accordion_info = accordion.next();
+  accordion_info.slideToggle();
+  icon.toggleClass('fas fa-chevron-right  fas fa-chevron-down');
+})
